@@ -25,7 +25,7 @@ def get_bootloader_path(interface):
 
 
 def get_interface_path(interface, target, bootloader=True):
-    return join(ROOT, "interface/mdk/%(interface)s/Obj/%(interface)s_%(target)s_if_mbed%(has_bootloader)s.axf" % {
+    return join(ROOT, "interface/mdk/%(interface)s/Obj/%(interface)s_%(target)s_if_mbed%(has_bootloader)s/%(interface)s_%(target)s_if_mbed%(has_bootloader)s.axf" % {
                         'interface': interface.lower(),
                         'target': target.lower(),
                         'has_bootloader': '_bootloader' if bootloader else ''})

@@ -13713,7 +13713,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Obj\k20dx128_k64f_if_mbed_bootloader\</OutputDirectory>
-          <OutputName>k20dx128_k64f_mbed</OutputName>
+          <OutputName>k20dx128_k64f_if_mbed_bootloader</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
