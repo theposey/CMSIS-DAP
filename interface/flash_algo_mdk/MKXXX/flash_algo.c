@@ -60,7 +60,7 @@ int UnInit (unsigned long fnc) {
 // {
 //     return (flash_verify_erase(&g_flash, adr, sz, kFlashMargin_Normal) != kStatus_Success);
 // }
-// 
+//
 // /*
 //  *  Verify Flash Contents
 //  *    Parameter:      adr:  Start Address
@@ -74,7 +74,7 @@ int UnInit (unsigned long fnc) {
 //     status_t status = flash_verify_program(&g_flash, adr, sz,
 //                               (const uint8_t *)buf, kFlashMargin_Normal,
 //                               &failedAddress, NULL);
-// 
+//
 //     if (status == kStatus_Success)
 //     {
 //         // Finished without Errors
@@ -93,7 +93,7 @@ int UnInit (unsigned long fnc) {
 
 int EraseChip (void)
 {
-    int status = flash_erase_all(&g_flash);
+    int status = flash_erase_all(&g_flash, kFlashEraseKey);
     if (status == kStatus_Success)
     {
         status = flash_verify_erase_all(&g_flash, kFlashMargin_Normal);
@@ -110,7 +110,7 @@ int EraseChip (void)
  */
 int EraseSector (unsigned long adr)
 {
-    int status = flash_erase(&g_flash, adr, 1);
+    int status = flash_erase(&g_flash, adr, 1, kFlashEraseKey);
     if (status == kStatus_Success)
     {
         status = flash_verify_erase(&g_flash, adr, 1, kFlashMargin_Normal);
