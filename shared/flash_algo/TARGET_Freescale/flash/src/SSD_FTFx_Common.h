@@ -32,7 +32,6 @@
 #define _SSD_FTFx_COMMON_H_
 
 #include "flash/flash.h"
-#include "bootloader_common.h"
 #include <stdint.h>
 
 ////////////////////////////////////////////////////////////////////////////////

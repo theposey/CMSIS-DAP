@@ -32,7 +32,6 @@
 #include "flash/flash.h"
 #include "device/fsl_device_registers.h"
 #include "fsl_platform_status.h"
-#include "bootloader_common.h"
 #include "flash_densities.h"
 #include "fsl_flash_features.h"
 
