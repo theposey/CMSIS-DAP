@@ -32,6 +32,7 @@
 #define _SSD_FTFx_COMMON_H_
 
 #include "flash/flash.h"
+#include "flash_features.h"
 #include <stdint.h>
 
 ////////////////////////////////////////////////////////////////////////////////

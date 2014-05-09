@@ -14,7 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
-FROMELF = 'fromelf'
+FROMELF = r'C:\Keil\ARM\ARMCC\bin\fromelf'
 UV4 = r'C:\Keil\UV4\UV4.exe'
 
 try:
