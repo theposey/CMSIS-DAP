@@ -66,6 +66,16 @@
     #define FSL_FEATURE_FTFx_PBLOCK_COUNT    (1)
     #define FSL_FEATURE_FTFx_PSECTOR_SIZE    (2048)
 
+#elif (defined(CPU_MK24FN256VDC12))
+
+    #define FSL_FEATURE_FTFx_MCM_FLASH_CACHE_CONTROLS (0)
+    #define FSL_FEATURE_FTFx_WORD_SIZE       (2)
+    #define FSL_FEATURE_FTFx_LONGWORD_SIZE   (4)
+    #define FSL_FEATURE_FTFx_PHRASE_SIZE     (4)
+    #define FSL_FEATURE_FTFx_REGION_COUNT    (32)
+    #define FSL_FEATURE_FTFx_PBLOCK_COUNT    (1)
+    #define FSL_FEATURE_FTFx_PSECTOR_SIZE    (4096)
+
 #elif (defined(CPU_MK22FN512VDC12) || defined(CPU_MK22FN512VLH12) || defined(CPU_MK22FN512VLL12))
 
     #define FSL_FEATURE_FTFx_MCM_FLASH_CACHE_CONTROLS (0)
@@ -178,6 +188,15 @@
     #define FSL_FEATURE_FTFx_REGION_COUNT    (32)
     #define FSL_FEATURE_FTFx_PBLOCK_COUNT    (2)
     #define FSL_FEATURE_FTFx_PSECTOR_SIZE    (1024)
+#elif defined(CPU_MK24FN1M0VDC12) || defined(CPU_MK24FN1M0VLQ12) || defined(CPU_MK63FN1M0VLQ12) || defined(CPU_MK63FN1M0VMD12)
+
+    #define FSL_FEATURE_FTFx_MCM_FLASH_CACHE_CONTROLS (1)
+    #define FSL_FEATURE_FTFx_WORD_SIZE       (2)
+    #define FSL_FEATURE_FTFx_LONGWORD_SIZE   (4)
+    #define FSL_FEATURE_FTFx_PHRASE_SIZE     (4)
+    #define FSL_FEATURE_FTFx_REGION_COUNT    (32)
+    #define FSL_FEATURE_FTFx_PBLOCK_COUNT    (2)
+    #define FSL_FEATURE_FTFx_PSECTOR_SIZE    (4096)
 
 #else
     #error "No valid CPU defined"
