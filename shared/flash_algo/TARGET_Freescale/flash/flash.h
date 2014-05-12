@@ -475,8 +475,10 @@ static inline void flash_cache_enable(bool doEnable)
 #elif FSL_FEATURE_FLASH_HAS_FMC_FLASH_CACHE_CONTROLS
     HW_FMC_PFB0CR(FMC_BASE).B.B0DCE = (uint32_t)doEnable;
     HW_FMC_PFB0CR(FMC_BASE).B.B0ICE = (uint32_t)doEnable;
+#ifdef FMC_PFB1CR_B1DCE_MASK // Some chips only have 1 flash bank (K20, K24S for example)
     HW_FMC_PFB1CR(FMC_BASE).B.B1DCE = (uint32_t)doEnable;
     HW_FMC_PFB1CR(FMC_BASE).B.B1ICE = (uint32_t)doEnable;
+#endif
 #else
     #error "Unknown flash cache controller"
 #endif // FSL_FEATURE_FTFx_MCM_FLASH_CACHE_CONTROLS
