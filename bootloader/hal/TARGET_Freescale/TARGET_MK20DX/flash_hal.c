@@ -39,7 +39,7 @@ int flash_hal_uninit(uint32_t fnc)
 
 int flash_hal_erase_chip(void)
 {
-    int status = flash_erase_all(&g_flash);
+    int status = flash_erase_all(&g_flash, kFlashEraseKey);
     if (status == kStatus_Success)
     {
         status = flash_verify_erase_all(&g_flash, kFlashMargin_Normal);
@@ -50,7 +50,7 @@ int flash_hal_erase_chip(void)
 
 int flash_hal_erase_sector(uint32_t adr)
 {
-    int status = flash_erase(&g_flash, adr, 1);
+    int status = flash_erase(&g_flash, adr, 1, kFlashEraseKey);
     if (status == kStatus_Success)
     {
         status = flash_verify_erase(&g_flash, adr, 1, kFlashMargin_Normal);
