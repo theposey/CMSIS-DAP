@@ -141,10 +141,10 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>7</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -158,7 +158,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\ULP2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -19437,7 +19437,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>6</TargetSelection>
@@ -21923,7 +21923,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>6</TargetSelection>
@@ -22631,7 +22631,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Obj\k20dx128_k24f256_if\</OutputDirectory>
-          <OutputName>k20dx128_k24f256_if</OutputName>
+          <OutputName>k20dx128_k24f256_if_openSDA</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -22660,9 +22660,9 @@
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>%KARM\ARMCC\bin\fromelf --m32combined --output=".\k20dx128_k24f_if_openSDA.S19" "#L"</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -22727,7 +22727,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>6</TargetSelection>
@@ -22946,7 +22946,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
+              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K24F256;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -22963,7 +22963,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>OPENSDA_BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -22978,7 +22978,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_openSDA_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -23435,7 +23435,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Obj\k20dx128_k24f256_if\</OutputDirectory>
-          <OutputName>k20dx128_k24f256_if</OutputName>
+          <OutputName>k20dx128_k24f256_if_mbed_bootloader</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -23464,9 +23464,9 @@
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>$KARM\ARMCC\BIN\FROMELF.EXE --BIN --OUTPUT=".\k20dx128_k24f_if_mbed.bin" "#L"</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -23531,7 +23531,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>6</TargetSelection>
@@ -23750,7 +23750,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
+              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K24F256;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -23767,7 +23767,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>MBED_BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -23782,7 +23782,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
