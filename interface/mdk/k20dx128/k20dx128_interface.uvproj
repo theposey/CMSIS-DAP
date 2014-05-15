@@ -1952,7 +1952,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>3</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -22630,7 +22630,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Obj\k20dx128_k24f256_if\</OutputDirectory>
+          <OutputDirectory>.\Obj\k20dx128_k24f256_if_openSDA\</OutputDirectory>
           <OutputName>k20dx128_k24f256_if_openSDA</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
@@ -23434,7 +23434,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Obj\k20dx128_k24f256_if\</OutputDirectory>
+          <OutputDirectory>.\Obj\k20dx128_k24f256_if_mbed_bootloader\</OutputDirectory>
           <OutputName>k20dx128_k24f256_if_mbed_bootloader</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
