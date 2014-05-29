@@ -79,13 +79,13 @@ INTERFACE_PROJECTS = [
             'path' : r'interface\mdk\lpc11u35\lpc11u35_interface.uvproj',
             'targets' : [
                             'lpc11u35_lpc812_if',
-                            'lpc11u35_lpc812_mbed_bootloader_if',
+                            'lpc11u35_lpc812_mbed_bootloader',
                             'lpc11u35_lpc1768_if',
                             'lpc11u35_lpc1768_mbed_bootloader',
                             'lpc11u35_ublox_if',
                             'lpc11u35_lpc1114_if',
-                            'lpc11u35_lpc1114_mbed_bootloader_if',
-                            #'lpc11u35_lpc810_if'
+                            'lpc11u35_lpc1114_mbed_bootloader',
+                            #'lpc11u35_lpc810_if' # fails build
                          ],
         },
         {
@@ -111,7 +111,8 @@ FLASH_ALGO_PROJECTS = [
                             'MKL05Z32_Pflash',
                             'MKL25Z128_Pflash',
                             'MKL26Z128_Pflash',
-                            'MKL46Z256_Pflash'
+                            'MKL46Z256_Pflash',
+                            'MK22F51212_Pflash',
                             'MK24F256_Pflash'
                         ]
         },
@@ -129,6 +130,15 @@ FLASH_ALGO_PROJECTS = [
                             'LPC8xx_IAP_4',
                             'LPC1549_IAP_256',
                             'LPC11U68_IAP_256'
+                        ]
+        },
+        {
+            'target' : 'LPC_SPIFI',
+            'path' : r'interface\flash_algo_mdk\LPC_SPIFI\LPC_SPIFI.uvproj',
+            'targets' : [
+                            'LPC1800_SPIFI_8M_4K',
+                            'LPC1800_SPIFI_4M_4K',
+                            'LPC1800_SPIFI_4M_64K',
                         ]
         }
     ]
