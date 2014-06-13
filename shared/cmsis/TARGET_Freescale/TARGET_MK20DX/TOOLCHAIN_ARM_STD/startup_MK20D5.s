@@ -307,7 +307,7 @@ __Vectors       DCD     __initial_sp  ; Top of Stack
                 DCD     DefaultISR  ; 255
 __Vectors_End
 
-__Vectors_Size 	EQU     __Vectors_End - __Vectors
+__Vectors_Size     EQU     __Vectors_End - __Vectors
 
 ; <h> Flash Configuration
 ;   <i> 16-byte flash configuration field that stores default protection settings (loaded on reset)
@@ -454,14 +454,12 @@ FOPT            EQU     0xFD
 FSEC            EQU     0xFE
 ;   </h>
 ; </h>
-                IF      :DEF:OPENSDA_BOOTLOADER
+                IF      :DEF:BOOTLOADER
                 AREA    |.ARM.__at_0x8400|, CODE, READONLY
-                ELIF    :DEF:MBED_BOOTLOADER
-                AREA    |.ARM.__at_0x5400|, CODE, READONLY
                 ELSE
                 AREA    |.ARM.__at_0x400 |, CODE, READONLY
                 ENDIF
-                
+
                 DCB     BackDoorK0, BackDoorK1, BackDoorK2, BackDoorK3
                 DCB     BackDoorK4, BackDoorK5, BackDoorK6, BackDoorK7
                 DCB     FPROT0,     FPROT1,     FPROT2,     FPROT3

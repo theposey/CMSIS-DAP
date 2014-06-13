@@ -392,7 +392,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -1164,7 +1164,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_FRDM_KL25Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_FRDM_KL25Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\Common\inc;..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\interface\cmsis;..\..\target\hal\DBG_Freescale\DBG_KL25Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -1181,7 +1181,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -1968,7 +1968,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_FRDM_KL25Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_FRDM_KL25Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL25Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -1985,7 +1985,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -2000,7 +2000,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -2804,7 +2804,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -3576,7 +3576,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>-DKL25Z</MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_TWR_KL25Z48M, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_TWR_KL25Z48M, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\Common\inc;..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\interface\cmsis;..\..\target\hal\DBG_Freescale\DBG_KL25Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -3593,7 +3593,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -4380,7 +4380,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>-DKL25Z</MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_TWR_KL25Z48M, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL25Z, BOARD_TWR_KL25Z48M, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL25Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -4397,7 +4397,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -4412,7 +4412,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -5216,7 +5216,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -5988,7 +5988,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>-DK20D50M</MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_K20D50M, BOARD_FRDM_K20D50M</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K20D50M, BOARD_FRDM_K20D50M</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K20D50M;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -6005,7 +6005,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -6792,7 +6792,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>-DK20D50M</MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_K20D50M, BOARD_FRDM_K20D50M</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K20D50M, BOARD_FRDM_K20D50M</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K20D50M;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -6809,7 +6809,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -6824,7 +6824,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -7628,7 +7628,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -8400,7 +8400,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_KL05Z, BOARD_FRDM_KL05Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL05Z, BOARD_FRDM_KL05Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL05Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -8417,7 +8417,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -9204,7 +9204,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_KL05Z, BOARD_FRDM_KL05Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL05Z, BOARD_FRDM_KL05Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL05Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -9221,7 +9221,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -9236,7 +9236,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -10040,7 +10040,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -10812,7 +10812,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_KL46Z, BOARD_FRDM_KL46Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL46Z, BOARD_FRDM_KL46Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL46Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -10829,7 +10829,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -11616,7 +11616,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_KL46Z, BOARD_FRDM_KL46Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL46Z, BOARD_FRDM_KL46Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL46Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -11633,7 +11633,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -11648,7 +11648,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -12201,7 +12201,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>6</TargetSelection>
@@ -12452,7 +12452,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -13224,7 +13224,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_K64F, BOARD_FRDM_K64F, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K64F, BOARD_FRDM_K64F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K64F;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -13241,7 +13241,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -14028,7 +14028,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_K64F, BOARD_FRDM_K64F, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K64F, BOARD_FRDM_K64F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K64F;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -14045,7 +14045,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -14060,7 +14060,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -14864,7 +14864,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -15636,7 +15636,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_KL02Z, BOARD_FRDM_KL02Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL02Z, BOARD_FRDM_KL02Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL02Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -15653,7 +15653,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -16440,7 +16440,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_KL02Z, BOARD_FRDM_KL02Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL02Z, BOARD_FRDM_KL02Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL02Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -16457,7 +16457,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -16472,7 +16472,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -17276,7 +17276,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -18048,7 +18048,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>-DKL25Z</MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_KL26Z, BOARD_FRDM_KL26Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL26Z, BOARD_FRDM_KL26Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\Common\inc;..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\interface\cmsis;..\..\target\hal\DBG_Freescale\DBG_KL26Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -18065,7 +18065,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -18852,7 +18852,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>-DKL25Z</MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_KL26Z, BOARD_FRDM_KL26Z, INTERFACE_GEN_32KHZ</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_KL26Z, BOARD_FRDM_KL26Z, INTERFACE_GEN_32KHZ</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_KL26Z;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -18869,7 +18869,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -18884,7 +18884,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -19688,7 +19688,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -20460,7 +20460,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_K22F, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K22F, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K22F;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -20477,7 +20477,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -21082,7 +21082,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>6</TargetSelection>
@@ -21301,7 +21301,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_K22F, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K22F, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K22F;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -21318,7 +21318,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -21333,7 +21333,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -22174,7 +22174,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_bootloader.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -22946,7 +22946,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_32K, TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K24F256;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -22963,7 +22963,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OPENSDA_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -23750,7 +23750,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
+              <Define>TARGET_MK20D5, __RTX, DBG_K24F256, BOARD_FRDM_K22F, INTERFACE_POWER_EN</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_K24F256;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
             </VariousControls>
@@ -23767,7 +23767,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MBED_BOOTLOADER</Define>
+              <Define>BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -23782,7 +23782,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x1FFFE000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_interface.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
